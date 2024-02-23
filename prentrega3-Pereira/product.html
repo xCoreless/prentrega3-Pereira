@@ -6,35 +6,42 @@
     <title>Uñas press-on - Frutilla Triste</title>
     <link rel="icon" type="image/x-icon" href="img/flower1.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="colorFondo">
+
+  <body class="bgColor">
+    <header>
+      <a href="index.html">
+        <img class="logo" src="img/logo.jpg" alt="logo frutilla triste">
+    </a> 
+    </header>
+
     <div class="container my-5">
         <div class="row">
-            <div class="col">
-                <ul class="nav d-flex align-items-center">
-                  <li class="nav-item">
-                    <a class="nav-link colorFuente" href="index.html" onclick="seeProductsByCategory('All')">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link colorFuente" href="index.html" onclick="seeProductsByCategory('Uñas')">Uñas custom</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link colorFuente" href="index.html" onclick="seeProductsByCategory('Sets')">Sets</a>
-                  </li>
-                </ul>
-            </div>
-            <div class="col text-end">
-              <a href="cart.html" class="btn colorFondo2 position-relative">
-                <img src="img/basket.svg" alt="Carrito" width="24">
-                <span id="totalCarrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-            </a>                         
-            </div>
+          div class="col">
+          <ul class="nav d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link mainFontColor" href="index.html" onclick="seeProductsByCat('All')">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mainFontColor" href="index.html" onclick="seeProductsByCat('Uñias')">Uñas custom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mainFontColor" href="index.html" onclick="seeProductsByCat('Sets')">Sets</a>
+            </li>
+          </ul>
+          <div class="col text-end">
+            <a href="cart.html" class="btn secondFontColor position-relative">
+                <img src="img/basket.svg" alt="Cart" width="24">
+                <span id="totalCart" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+            </a>                    
         </div>
     </div>
-    <div class="container">
-      <div id="product"></div>
-    </div>
+</div>
+<div class="container">
+  <div id="product"></div>
+</div>
+
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="js/functions.js"></script>
